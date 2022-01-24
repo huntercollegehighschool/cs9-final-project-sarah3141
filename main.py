@@ -7,8 +7,7 @@ import os
 string_to_encode = 0
 name = input("Greetings, what's your name? ")
 print("Hello,", name+".")
-
-mode = (input("Type 1 to encode your own messages. Type 2 to play a game: "))
+mode = int(input("Type 1 to encode your own messages. Type 2 to play a game: "))
 if mode == 1:
   type_of_cipher = str(input("Type the name of the cipher you would like to use.If you want to play a game, type \"game\". \nYour choices are:\nAtbash \nASCII \nCaesarean \nWhich one would you like to choose? "))
   if type_of_cipher.lower() == "atbash":
@@ -55,7 +54,7 @@ if mode == 1:
 
   else:
     print("Sorry, that is not a valid option.")
-    type_of_cipher = str(input("Try again. If you want to play a game, type \"game\". \nYour choices of cipher are:\nAtbash \nASCII \nCaesarean \nWhich one would you like to choose? "))
+    type_of_cipher = str(input("Try again. If you want to play a game, type \"2\". \nYour choices of cipher are:\nAtbash \nASCII \nCaesarean \nWhich one would you like to choose? "))
 
 elif mode == 2:
   import random
@@ -171,3 +170,4 @@ elif mode == 2:
         print("Good job, you guessed correctly!")
   else:
     cipherorrandom = input("Sorry, that is not a valid option. Try again; type \"cipher\" or \"random\": ")
+
