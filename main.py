@@ -8,7 +8,7 @@ string_to_encode = 0
 name = input("Greetings, what's your name? ")
 print("Hello,", name+".")
 
-mode = int(input("Type 1 to encode your own messages. Type 2 to play a game: "))
+mode = (input("Type 1 to encode your own messages. Type 2 to play a game: "))
 if mode == 1:
   type_of_cipher = str(input("Type the name of the cipher you would like to use.If you want to play a game, type \"game\". \nYour choices are:\nAtbash \nASCII \nCaesarean \nWhich one would you like to choose? "))
   if type_of_cipher.lower() == "atbash":
@@ -169,5 +169,5 @@ elif mode == 2:
         word = str(input("Guess the word: "))
       if word.lower() == string_to_encode:
         print("Good job, you guessed correctly!")
-else:
-  cipherorrandom = input("Sorry, that is not a valid option. Try again; type \"cipher\" or \"random\": ")
+  else:
+    cipherorrandom = input("Sorry, that is not a valid option. Try again; type \"cipher\" or \"random\": ")
