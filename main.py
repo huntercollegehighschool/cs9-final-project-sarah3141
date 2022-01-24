@@ -51,10 +51,13 @@ if mode == 1:
       return newstring
     os.system("clear")
     caesar(string_to_encode, shift)
+  
+  elif type_of_cipher.lower() == "dog":
+    os.system("clear")
+    print("૮ ・ﻌ・ა")
+    import sys
+    sys.exit()
 
-  else:
-    print("Sorry, that is not a valid option.")
-    type_of_cipher = str(input("Try again. If you want to play a game, type \"2\". \nYour choices of cipher are:\nAtbash \nASCII \nCaesarean \nWhich one would you like to choose? "))
 
 elif mode == 2:
   import random
@@ -114,7 +117,6 @@ elif mode == 2:
       if word.lower() == string_to_encode:
         print("Good job, you guessed correctly!")
 
-        
   elif cipherorrandom.lower() == "random":
     list_of_ciphers = ['atbash', 'ascii', 'caesarean']
     cipher = random.choice(list_of_ciphers)
