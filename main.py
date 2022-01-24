@@ -99,6 +99,8 @@ elif mode == 2:
       newstring = ''
       for ch in string_to_encode:
         if ch.isalpha():
+          numbers = [1, 2, 3, 4, 5]
+          shift = random.choice(numbers)
           moving = ord(ch) + shift
           if moving > ord('z'):
             moving -= 26
