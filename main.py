@@ -9,7 +9,7 @@ name = input("Greetings, what's your name? ")
 print("Hello,", name+".")
 mode = int(input("Type 1 to encode your own messages. Type 2 to play a game: "))
 if mode == 1:
-  type_of_cipher = str(input("Type the name of the cipher you would like to use.If you want to play a game, type \"game\". \nYour choices are:\nAtbash \nASCII \nCaesarean \nWhich one would you like to choose? "))
+  type_of_cipher = str(input("Type the name of the cipher you would like to use. \nYour choices are:\nAtbash \nASCII \nCaesarean \nWhich one would you like to choose? "))
   if type_of_cipher.lower() == "atbash":
     def atbash():
       string_to_encode = str(input("Here you can encode your own message. What would you like to encode? Type it here: "))
